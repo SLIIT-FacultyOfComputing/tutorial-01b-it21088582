@@ -19,12 +19,13 @@ int main() {
   printf("Enter number : ");
   scanf("%d",&num);
 
-  for(i = 1; i <= num; i++)
+  while(i <= num)
   {
     sum = sum + i;
+    i = i + 1;
   }
 
-  printf("sum : %d",&sum);
+  printf("1+2+3+...+%d = %d",num,sum);
   
   return 0;
 }
